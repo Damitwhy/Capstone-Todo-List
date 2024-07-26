@@ -1,0 +1,6 @@
+<h1>Are you sure you want to log out?</h1>
+<form method="POST">
+    {% csrf_token}
+    <input type="submit" value="Logout">
+</form>
+<p> <a href="{% url 'task-list' %}">Cancel</a></p>
