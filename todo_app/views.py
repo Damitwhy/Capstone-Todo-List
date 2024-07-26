@@ -36,7 +36,6 @@ class MyLogoutView(LogoutView):
 
     template_name = 'todo_app/logout.html'
     fields = '__all__'
-    redirect_authenticated_user = True
 
     def logout_view(request):
         logout(request)
